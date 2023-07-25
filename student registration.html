@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Invitation</title>
+  
+
+
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    .invitation-card {
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+    .invitation-card h2 {
+      margin: 0;
+      text-align: center;
+    }
+
+    .invitation-card p {
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Form Styles */
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Event Invitation</h1>
+    <p>
+      You are invited to our special event! Join us for an amazing time filled with fun, food, and friends.
+    </p>
+    <div class="invitation-card">
+      <h2>Event Details</h2>
+      <p>
+        <strong>Event:</strong> Our Special Event
+      </p>
+      <p>
+        <strong>Date:</strong> September 1st, 2023
+      </p>
+      <p>
+        <strong>Time:</strong> 6:00 PM - 10:00 PM
+      </p>
+      <p>
+        <strong>Location:</strong> The Grand Hall
+      </p>
+      <p>
+        1234 Main Street, Cityville
+      </p>
+
+      <!-- RSVP Form -->
+      <form action="rsvp_confirmation.html" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+        <label for="message">Message (Optional):</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <input type="submit" value="RSVP Now">
+      </form>
+      <!-- End of RSVP Form -->
+    </div>
+  </div>
+</body>
+</html>
